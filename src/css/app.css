@@ -10,16 +10,30 @@
 }
 
 #app .container {
-  width: 376px;
+  display: flex;
+  flex-direction: column;
+  width: 416px;
   height: 666px;
   z-index: 100;
-
+  
   background: white;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
 }
 
-#app .container-view {
-  padding: 20px;
+#app .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
+#app .container-view {
+  padding: 1em;
+  min-height: 450px;
+  overflow-y: scroll;
+}
+
+#app .container-view::-webkit-scrollbar {
+  display: none;
+}
